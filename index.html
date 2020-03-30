@@ -4,9 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torty z pieluszek</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Source+Sans+Pro:400,400i,700,900&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+
+    <!-- fontawesome icons stylesheet -->
+    <link rel="stylesheet" href="style/all.css" />
+    <!-- ---------------------------- -->
+
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <h1>Torty z pieluszek</h1>
-    <p>tu będzie stronka</p>
+    <div class="wrapper">
+      <div class="burger">
+        <i class="fas fa-bars active"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <nav class="menu-bar">
+        <div class="menu-logo">
+          <img
+            src="img/torty-z-pieluszek-logo-menu-male.png"
+            alt="torty z pieluszek logo"
+          />
+        </div>
+        <ul class="menu-items-container">
+          <li class="menu-item" id="about">O nas</li>
+          <li class="menu-item" id="gallery">Galeria</li>
+          <li class="menu-item" id="order">Jak zamówić?</li>
+          <li class="menu-item" id="contact">Kontakt</li>
+        </ul>
+        <div class="socials">
+          <a href="https://www.facebook.com/torcikizpieluszek/"
+            ><i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/torcikizpieluszek/">
+            <i class="fab fa-instagram-square"></i>
+          </a>
+        </div>
+      </nav>
+      <header class="home">
+        <div class="home-logo">
+          <img
+            src="img/torty-z-pieluszek-logo.png"
+            alt="torty z pieluszek logo"
+          />
+        </div>
+      </header>
+      <section class="about"><h2>O nas</h2></section>
+      <section class="gallery"><h2>Galeria</h2></section>
+      <section class="order"><h2>Jak zamówić?</h2></section>
+      <section class="contact"><h2>Kontakt</h2></section>
+      <footer>Stopka</footer>
+    </div>
+
+    <script src="js/menu.js"></script>
   </body>
 </html>

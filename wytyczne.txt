@@ -1,0 +1,35 @@
+1) menu top jak tu:
+https://martynasoul.com/fotografia-rodzinna-dziecieca/
+
+plus dać fixa (z przejsciem?).
+Na menu items dać transition, rozjasnienie. Kolor czcionki - pudrowy róż, może błękit.
+
+Na headerze dać logo duże, po scrollu do 1/2 pierwszej sekcji dać menu mniejsze i logo w menu po lewej. Napisy Menu do lewej, w menu dać też odnośniki do fb, insta itp
+tutaj inspiracja: https://www.jestrudo.pl/fotografia-noworodkowa/
+
+Pozycje menu:
+1) Home,
+2) O nas,
+3) Galeria,
+4) Kontakt
+
+5) Sklep - przesunięty do prawej, bliżej odnośników do fb i insta,
+
+2) strona one page, z nawigacją scrollowaną
+
+3) Dać jakiś background na body, sekcjom dać margin top/bottom.
+
+4) z takich rzeczy które są ważne w moim przypadku to info o dostawie, płatności i czas realizacji i znalazłam na stronie:, www.plaaywood.pl jak zjedziesz do dołu to tam.maja ikonki i opisane.
+
+5) PALETA BARW:
+- #EDC7B7  (pudr)
+- #EEE2DC  (szarosc)
+- #BAB2B5  (ciemniejsza szarosc)
+- #123C69  (granat - do zmiany na błękit)
+- #AC3B61  (bordo - do zmiany na róż)
+
+6) FONTY
+- Century gothic; Open Sans (dla tekstów)
+- Caviar (dla nagłówków i pozycji menu)
+- Amatic (ozdobny, fikuśny font - może dla pozycji menu)
+- Caveat (ozdobny)
