@@ -242,12 +242,18 @@ section {
 .gallery .images a {
   flex-basis: calc(25% - 10px);
   margin: 5px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .gallery .images img {
   display: block;
   width: 100%;
-  border-radius: 12px;
+  transition: 0.4s;
+}
+
+.gallery .images img:hover {
+  transform: scale(1.1);
 }
 
 footer {
