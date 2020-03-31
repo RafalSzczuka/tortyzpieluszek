@@ -9,15 +9,13 @@ const photos = [
 ];
 
 let activeElement = 0;
-sliderImg.classList.add("active");
 
 function changePhoto() {
   activeElement++;
   if (activeElement == photos.length) {
     activeElement = 0;
   }
-  sliderImg.classList.add("active");
   sliderImg.src = photos[activeElement];
 }
 
-setInterval(changePhoto, 7000);
+setInterval(changePhoto, 5000);

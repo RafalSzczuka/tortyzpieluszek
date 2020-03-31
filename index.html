@@ -4,16 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Torty z pieluszek</title>
-
     <link
       href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Source+Sans+Pro:400,400i,700,900&display=swap&subset=latin-ext"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="node_modules/lightbox2/dist/css/lightbox.css"
+    />
     <!-- fontawesome icons stylesheet -->
     <link rel="stylesheet" href="style/all.css" />
     <!-- ---------------------------- -->
-
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
@@ -51,14 +52,83 @@
           <img src="img/header-banner-photo-1.JPG" alt="tort z pieluszek" />
         </div>
       </header>
-      <section class="gallery"><h2>Galeria</h2></section>
-      <section class="news"><h2>Nowości</h2></section>
-      <section class="order"><h2>Jak zamówić?</h2></section>
-      <section class="contact"><h2>Kontakt</h2></section>
-      <section class="about"><h2>O mnie</h2></section>
-      <footer>Stopka</footer>
+      <section class="gallery">
+        <h2>Galeria tortów</h2>
+        <div class="images">
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-1.jpg"
+          >
+            <img src="img/gallery/gallery-photo-1-thumb.jpg" alt=""
+          /></a>
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-2.jpg"
+          >
+            <img src="img/gallery/gallery-photo-2-thumb.jpg" alt=""
+          /></a>
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-3.jpg"
+          >
+            <img src="img/gallery/gallery-photo-3-thumb.jpg" alt=""
+          /></a>
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-4.jpg"
+          >
+            <img src="img/gallery/gallery-photo-4-thumb.jpg" alt=""
+          /></a>
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-5.jpg"
+          >
+            <img src="img/gallery/gallery-photo-5-thumb.jpg" alt=""
+          /></a>
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-6.jpg"
+          >
+            <img src="img/gallery/gallery-photo-6-thumb.jpg" alt=""
+          /></a>
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-7.jpg"
+          >
+            <img src="img/gallery/gallery-photo-7-thumb.jpg" alt=""
+          /></a>
+          <a
+            data-lightbox="gallery-main"
+            data-title="Tytuł zdjęcia"
+            href="img/gallery/gallery-photo-8.jpg"
+          >
+            <img src="img/gallery/gallery-photo-8-thumb.jpg" alt=""
+          /></a>
+        </div>
+      </section>
+      <section class="news temp"><h2>Nowości</h2></section>
+      <section class="order temp"><h2>Jak zamówić?</h2></section>
+      <section class="contact temp"><h2>Kontakt</h2></section>
+      <section class="about temp"><h2>O mnie</h2></section>
+      <footer>
+        <p>Torty z pieluszek &copy;</p>
+        <p>2020r.</p>
+        <span>autor: Rafał Szczuka</span>
+      </footer>
     </div>
 
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js">
+      lightbox.option({
+        "albumLabel": 'Zdjęcie %1 z %2'
+      })
+    </script>
     <script src="js/menu.js"></script>
     <script src="js/slider.js"></script>
   </body>
