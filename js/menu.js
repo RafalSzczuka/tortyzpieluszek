@@ -2,6 +2,7 @@
 const menuBar = document.querySelector(".menu-bar");
 const menuLogo = document.querySelector(".menu-logo img");
 const menuAbout = document.getElementById("about");
+const menuNews = document.getElementById("news");
 const menuGallery = document.getElementById("gallery");
 const menuOrder = document.getElementById("order");
 const menuContact = document.getElementById("contact");
@@ -12,6 +13,7 @@ const burgerOff = document.querySelector(".fas.fa-times");
 // sections
 const sectionHome = document.querySelector(".home");
 const sectionAbout = document.querySelector(".about");
+const sectionNews = document.querySelector(".news");
 const sectionGallery = document.querySelector(".gallery");
 const sectionOrder = document.querySelector(".order");
 const sectionContact = document.querySelector(".contact");
@@ -19,12 +21,14 @@ const sectionContact = document.querySelector(".contact");
 // sections from top
 const sectionHomeFromTop = sectionHome.offsetTop;
 const sectionAboutFromTop = sectionAbout.offsetTop;
+const sectionNewsFromTop = sectionNews.offsetTop;
 const sectionGalleryFromTop = sectionGallery.offsetTop;
 const sectionOrderFromTop = sectionOrder.offsetTop;
 const sectionContactFromTop = sectionContact.offsetTop;
 
 // burger menu icon toggler
 function burgerToggler() {
+  menuLogo.src = "img/torty-z-pieluszek-logo-menu-male-2.png";
   menuBar.classList.toggle("active");
   burgerOn.classList.toggle("active");
   burgerOff.classList.toggle("active");
@@ -51,6 +55,10 @@ menuAbout.addEventListener("click", function() {
   window.scrollTo(0, sectionAboutFromTop);
   menuToggler();
 });
+menuNews.addEventListener("click", function() {
+  window.scrollTo(0, sectionNewsFromTop);
+  menuToggler();
+});
 menuGallery.addEventListener("click", function() {
   window.scrollTo(0, sectionGalleryFromTop);
   menuToggler();
@@ -65,7 +73,7 @@ menuContact.addEventListener("click", function() {
 });
 
 window.addEventListener("scroll", function() {
-  if (window.scrollY >= sectionAboutFromTop) {
+  if (window.scrollY >= sectionGalleryFromTop) {
     menuLogo.classList.add("active");
   } else {
     menuLogo.classList.remove("active");
