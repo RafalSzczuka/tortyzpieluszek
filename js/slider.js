@@ -5,7 +5,7 @@ const currentPhoto = document.getElementById("current-photo");
 const photos = [
   "img/header-banner-photo-1.JPG",
   "img/header-banner-photo-2.JPG",
-  "img/header-banner-photo-3.JPG"
+  "img/header-banner-photo-3.jpg"
 ];
 
 let activeElement = 0;
