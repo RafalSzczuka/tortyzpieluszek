@@ -1,5 +1,8 @@
+// ***************** variables and functions declaration *****************
+
 // menu elements
 const menuBar = document.querySelector(".menu-bar");
+const menuItems = document.querySelectorAll(".menu-item");
 const menuLogo = document.querySelector(".menu-logo img");
 const menuAbout = document.getElementById("about");
 const menuNews = document.getElementById("news");
@@ -9,6 +12,7 @@ const menuContact = document.getElementById("contact");
 const burgerBtn = document.querySelector(".burger");
 const burgerOn = document.querySelector(".fas.fa-bars");
 const burgerOff = document.querySelector(".fas.fa-times");
+const socialsIcons = document.querySelectorAll(".socials i");
 
 // sections
 const sectionHome = document.querySelector(".home");
@@ -46,6 +50,20 @@ burgerBtn.addEventListener("click", function() {
   burgerToggler();
 });
 
+// universal functions to add and remove class to multiple elements (provided in an array)
+function addClassForElements(elementsArray, setClass) {
+  for (let i = 0; i < elementsArray.length; i++) {
+    elementsArray[i].forEach(item => item.classList.add(setClass));
+  }
+}
+function removeClassForElements(elementsArray, setClass) {
+  for (let i = 0; i < elementsArray.length; i++) {
+    elementsArray[i].forEach(item => item.classList.remove(setClass));
+  }
+}
+
+// ***************** IMPLEMENTATION *****************
+
 // scroll to section
 menuLogo.addEventListener("click", function() {
   window.scrollTo(0, sectionHomeFromTop);
@@ -74,8 +92,10 @@ menuContact.addEventListener("click", function() {
 
 window.addEventListener("scroll", function() {
   if (window.scrollY >= sectionGalleryFromTop) {
+    addClassForElements([menuItems, socialsIcons], "small");
     menuLogo.classList.add("active");
   } else {
+    removeClassForElements([menuItems, socialsIcons], "small");
     menuLogo.classList.remove("active");
   }
 });
