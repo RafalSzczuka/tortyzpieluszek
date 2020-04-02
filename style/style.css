@@ -125,8 +125,11 @@ section {
   cursor: pointer;
 }
 
-.socials i:hover {
-  color: white;
+.socials i:hover.fa-facebook {
+  color: hsl(202, 68%, 70%);
+}
+.socials i:hover.fa-instagram-square {
+  color: hsl(332, 78%, 70%);
 }
 
 .socials i.small {
@@ -231,28 +234,32 @@ section {
 
 .gallery {
   position: relative;
+  background-color: white;
 }
 
 .gallery h2 {
   position: absolute;
-  top: 95px;
+  font-family: "Amatic SC", cursive;
+  top: 60px;
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 6rem;
   text-transform: uppercase;
 }
 
 .gallery .images {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
-  margin: 0 20px;
-  background-color: white;
-  border-radius: 12px;
+  width: 95%;
 }
 
 .gallery .images a {
-  flex-basis: calc(25% - 10px);
+  flex-basis: calc(20% - 10px);
   margin: 5px;
   border-radius: 12px;
   overflow: hidden;
@@ -305,6 +312,11 @@ footer span {
     cursor: none;
   }
 
+  .menu-item.small {
+    font-size: 3.8rem;
+    padding: 10px;
+  }
+
   .menu-logo img {
     position: absolute;
     width: 160px;
@@ -353,12 +365,14 @@ footer span {
 
   .gallery h2 {
     top: 13px;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .gallery .images {
-    margin: 10px 5px;
-    padding-top: 40px;
+    position: static;
+    transform: translate(0, 0);
+    width: 100%;
+    margin-top: 60px;
   }
 
   .gallery .images a {

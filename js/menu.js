@@ -4,14 +4,17 @@
 const menuBar = document.querySelector(".menu-bar");
 const menuItems = document.querySelectorAll(".menu-item");
 const menuLogo = document.querySelector(".menu-logo img");
+
 const menuAbout = document.getElementById("about");
 const menuNews = document.getElementById("news");
 const menuGallery = document.getElementById("gallery");
 const menuOrder = document.getElementById("order");
 const menuContact = document.getElementById("contact");
+
 const burgerBtn = document.querySelector(".burger");
 const burgerOn = document.querySelector(".fas.fa-bars");
 const burgerOff = document.querySelector(".fas.fa-times");
+
 const socialsIcons = document.querySelectorAll(".socials i");
 
 // sections
@@ -90,6 +93,7 @@ menuContact.addEventListener("click", function() {
   menuToggler();
 });
 
+// add small class to menu bar (only in desktop view)
 window.addEventListener("scroll", function() {
   if (window.scrollY >= sectionGalleryFromTop) {
     addClassForElements([menuItems, socialsIcons], "small");
